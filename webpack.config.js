@@ -4,8 +4,8 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
-  //   watch: true,
+  entry: "./src/main.js",
+  devtool: "inline-source-map",
   output: {
     filename: "main.js",
     path: path.join(__dirname, "dist"),
